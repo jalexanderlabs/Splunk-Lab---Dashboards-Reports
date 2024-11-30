@@ -29,4 +29,10 @@ Learning Note: Splunk dashboards use the data from the reports to build the visu
 
 Alerting on High Priority Events 
 
+Now I am learning how to set up alerts. First, I run a search for the required search term. In the 'Save As' drop-down, I selected an option for saving as an alert. In the the previous section, Sarah logged into the VPN the most and Emma had the least amount of sessions . I want to narrow down down the alerts to Sarah specifically due to how high her VPN connection count is. In the search I run the query index=summary extracted_host=vpn_server Username=Sarah. I then set the alerts parameters to be scheduled for every hour, and if the trigger condition is met, it will alert me. Next, I set the trigger conditions. For this lab, I am setting it up to only trigger after 5 attempts or greater. So, in the end, I configured an alert to only trigger if Sarah logs in 5 times or more and run every hour. 
+
+Conclusion
+
+I learned how organize data in splunk by creating reports and uploading that data in a report. These reports can run on a schedule and I can also use the dashboard feature to stylize them into a more visual-friendly format. Alerts can also be made from these reports/dashboards where I can get alerted if certain triggers occur and it will also send me an email and update my in real-time of certain events. 
+
 
